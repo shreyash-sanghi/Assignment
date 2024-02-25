@@ -187,7 +187,7 @@ const Dashboard = () => {
           <td>{user.email}</td>
           <td>{user.phone}</td>
           <td>
-            <button className="edit-btn" onClick={() => handleEdit(user.id)}>Edit</button>
+            <button className="edit-btn" ><Link to={`/data/${user.id}`}>Edit</Link></button>
           </td>
           <td>
             <button className="delete-btn" onClick={() => handleDelete(user.id)}>Delete</button>
@@ -234,7 +234,7 @@ const Dashboard = () => {
       <td>{user.email}</td>
       <td>{user.phone}</td>
       <td>
-        <button className="edit-btn" onClick={() => handleEdit(user.id)}>Edit</button>
+        <Link className="edit-btn" to={`/data/${user.id}`}>Edit</Link>
       </td>
       <td>
         <button className="delete-btn" onClick={() => handleDelete(user.id)}>Delete</button>
